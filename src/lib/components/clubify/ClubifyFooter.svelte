@@ -3,11 +3,9 @@
 >
 	<div class="mx-auto flex max-w-3xl flex-col items-center justify-center">
 		<p class="text-center text-sm text-zinc-500">
-			Clubify is a project by <a
-				href="https://jontrokotha.live"
-				class="text-zinc-600 hover:underline">Jontrokotha</a
+			A project by <a href="https://unitedclubsbd.com" class="text-zinc-600 hover:underline"
+				>United Clubs of Bangladesh</a
 			>
-			and <a href="https://sh4jid.me" class="text-zinc-600 hover:underline">@sh4jid</a>
 		</p>
 	</div>
 </footer>

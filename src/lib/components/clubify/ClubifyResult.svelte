@@ -17,6 +17,7 @@
 	import { slugify } from '$lib/utilities';
 	import { PUBLIC_CLUBIFY_API_BASE } from '$env/static/public';
 	import { goto } from '$app/navigation';
+	import ChatGPTPlusAd from '$lib/components/clubify/ChatGPTPlusAd.svelte';
 
 	interface Props {
 		data: PhotocardData;
@@ -74,7 +75,7 @@
 				}
 			});
 
-			const response = await fetch(`${PUBLIC_CLUBIFY_API_BASE}/post-to-jontrokotha`, {
+			const response = await fetch(`${PUBLIC_CLUBIFY_API_BASE}/post-to-uab`, {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
@@ -94,7 +95,7 @@
 
 			postingToFacebook = false;
 
-			goto(`/clubify/${jsonData.post_id}`);
+			goto(`/uab/${jsonData.post_id}`);
 		} catch (error) {
 			postingToFacebook = false;
 			alert('Failed to post to Facebook');
@@ -169,11 +170,15 @@
 				<h2 class="text-3xl tracking-tight text-zinc-900">Congratulations!</h2>
 				<p class="mt-2 text-base text-zinc-500">You're in a club now!</p>
 			</div>
+			<!-- Advertisement placed above the photocard result -->
+			<div class="mt-2">
+				<ChatGPTPlusAd />
+			</div>
 
 			<!-- Card Display -->
 			<div
 				bind:this={photocardContainerDiv}
-				class="relative mx-auto aspect-square ring-1 ring-zinc-200"
+				class="relative mx-auto mt-12 aspect-square ring-1 ring-zinc-200"
 			>
 				{#if randomizing}
 					<div
@@ -194,7 +199,7 @@
 				<!-- Primary CTA -->
 				<button
 					onclick={onPostToFacebook}
-					class="group flex w-full items-center justify-center gap-3 rounded-full bg-indigo-600 px-4 py-3 text-lg text-sm font-medium text-white shadow-lg ring-1 shadow-indigo-600/20 ring-black/5 transition-all duration-200 hover:bg-indigo-700 hover:shadow-xl focus-visible:ring-2 focus-visible:ring-indigo-500/40 focus-visible:outline-none md:text-lg"
+					class="group flex w-full items-center justify-center gap-3 rounded-full bg-indigo-600 px-4 py-3 text-sm font-medium text-white shadow-lg ring-1 shadow-indigo-600/20 ring-black/5 transition-all duration-200 hover:bg-indigo-700 hover:shadow-xl focus-visible:ring-2 focus-visible:ring-indigo-500/40 focus-visible:outline-none md:text-lg"
 					disabled={postingToFacebook}
 				>
 					{#if postingToFacebook}
@@ -212,7 +217,7 @@
 							/></svg
 						>
 					{/if}
-					<span> Post to Jontrokotha Facebook Page </span>
+					<span> Post to UAB Facebook Page </span>
 				</button>
 
 				<!-- Secondary row: randomize + subtle download link -->

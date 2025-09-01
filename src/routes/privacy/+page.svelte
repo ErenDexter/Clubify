@@ -1,6 +1,6 @@
 <svelte:head>
-	<title>Privacy Policy - Clubify</title>
-	<meta name="description" content="Privacy Policy for Clubify website" />
+	<title>Privacy Policy - UAB</title>
+	<meta name="description" content="Privacy Policy for UAB website" />
 </svelte:head>
 
 <main class="min-h-screen bg-gray-50 py-12">
@@ -16,9 +16,9 @@
 			<div class="prose prose-lg max-w-none">
 				<h2>Introduction</h2>
 				<p>
-					Welcome to Clubify. We respect your privacy and are committed to protecting your personal
-					information. This Privacy Policy explains how we collect, use, and safeguard your
-					information when you visit our website.
+					Welcome to UAB (United Clubs of Bangladesh). We respect your privacy and are committed to
+					protecting your personal information. This Privacy Policy explains how we collect, use,
+					and safeguard your information when you visit our website.
 				</p>
 
 				<h2>Information We Collect</h2>

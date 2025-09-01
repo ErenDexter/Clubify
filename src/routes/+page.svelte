@@ -88,22 +88,28 @@
 </script>
 
 <svelte:head>
-	<title>Clubify – Find out which club you belong to | Jontrokotha</title>
+	<title>United Clubs of Bangladesh – Find out which club you belong to | UAB</title>
 	<meta
 		name="description"
 		content="Upload a photo and instantly discover your club with a personalized photocard. Fun, free, and shareable."
 	/>
 	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="Jontrokotha" />
-	<meta property="og:title" content="Clubify – Find out which club you belong to | Jontrokotha" />
+	<meta property="og:site_name" content="United Clubs of Bangladesh" />
+	<meta
+		property="og:title"
+		content="United Clubs of Bangladesh – Find out which club you belong to | UAB"
+	/>
 	<meta
 		property="og:description"
 		content="Upload a photo and instantly discover your club with a personalized photocard. Fun, free, and shareable."
 	/>
 	<meta property="og:image" content={logo} />
-	<link rel="canonical" href="/clubify" />
+	<link rel="canonical" href="/uab" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Clubify – Find out which club you belong to | Jontrokotha" />
+	<meta
+		name="twitter:title"
+		content="United Clubs of Bangladesh – Find out which club you belong to | UAB"
+	/>
 	<meta
 		name="twitter:description"
 		content="Upload a photo and instantly discover your club with a personalized photocard."

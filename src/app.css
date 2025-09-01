@@ -3,6 +3,7 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
-    --font-sans: "Inter Variable", system-ui, sans-serif;
-    --font-serif: "Playfair Display Variable", serif;
+	--font-sans: 'Inter Variable', system-ui, sans-serif;
+	--font-serif: 'Playfair Display Variable', serif;
+	--font-bengali: 'Baloo Da 2 Variable', cursive;
 }
