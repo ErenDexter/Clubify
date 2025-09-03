@@ -88,7 +88,7 @@
 </script>
 
 <svelte:head>
-	<title>United Clubs of Bangladesh – Find out which club you belong to | UAB</title>
+	<title>United Clubs of Bangladesh – Find out which club you belong to | UCBD</title>
 	<meta
 		name="description"
 		content="Upload a photo and instantly discover your club with a personalized photocard. Fun, free, and shareable."
@@ -97,18 +97,18 @@
 	<meta property="og:site_name" content="United Clubs of Bangladesh" />
 	<meta
 		property="og:title"
-		content="United Clubs of Bangladesh – Find out which club you belong to | UAB"
+		content="United Clubs of Bangladesh – Find out which club you belong to | UCBD"
 	/>
 	<meta
 		property="og:description"
 		content="Upload a photo and instantly discover your club with a personalized photocard. Fun, free, and shareable."
 	/>
 	<meta property="og:image" content={logo} />
-	<link rel="canonical" href="/uab" />
+	<link rel="canonical" href="/" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta
 		name="twitter:title"
-		content="United Clubs of Bangladesh – Find out which club you belong to | UAB"
+		content="United Clubs of Bangladesh – Find out which club you belong to | UCBD"
 	/>
 	<meta
 		name="twitter:description"

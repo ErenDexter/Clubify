@@ -5,14 +5,15 @@
 <header class="w-full border-b border-zinc-200 bg-white">
 	<div class="mx-auto flex max-w-3xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
 		<div class="flex items-center gap-3">
-			<a href="/uab">
-				<img src={logo} alt="UAB Logo" class="h-9 w-9 rounded-lg shadow-sm" />
+			<a href="/">
+				<img src={logo} alt="UCBD Logo" class="h-9 w-9 rounded-lg shadow-sm" />
 			</a>
 			<div class="flex flex-col">
-				<a href="/uab">
-					<span class="text-xl font-semibold tracking-tight text-zinc-900"
-						>United Clubs of Bangladesh</span
-					>
+				<a href="/">
+					<span class="text-xl font-semibold tracking-tight text-zinc-900">
+						<span class="sm:hidden">UCBD</span>
+						<span class="hidden sm:inline">United Clubs of Bangladesh</span>
+					</span>
 				</a>
 				<span class="text-xs text-zinc-500">
 					<a href="/" class="hover:underline">Club of All Clubs</a>
@@ -23,7 +24,7 @@
 		<a
 			href="https://www.facebook.com/unitedclubsbd"
 			class="group inline-flex items-center gap-2 rounded-full bg-[#1877F2] px-3.5 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#166FE5] focus:ring-2 focus:ring-[#1877F2]/30 focus:outline-none"
-			aria-label="Follow UAB on Facebook"
+			aria-label="Follow UCBD on Facebook"
 			target="_blank"
 			rel="noopener noreferrer"
 		>

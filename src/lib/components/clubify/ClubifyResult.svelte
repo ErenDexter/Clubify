@@ -95,7 +95,7 @@
 
 			postingToFacebook = false;
 
-			goto(`/uab/${jsonData.post_id}`);
+			goto(`/${jsonData.post_id}`);
 		} catch (error) {
 			postingToFacebook = false;
 			alert('Failed to post to Facebook');
@@ -217,7 +217,7 @@
 							/></svg
 						>
 					{/if}
-					<span> Post to UAB Facebook Page </span>
+					<span> Post to UCBD Facebook Page </span>
 				</button>
 
 				<!-- Secondary row: randomize + subtle download link -->
