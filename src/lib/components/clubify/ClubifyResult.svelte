@@ -15,7 +15,6 @@
 	import confetti from 'canvas-confetti';
 	import { toPng } from 'html-to-image';
 	import { slugify } from '$lib/utilities';
-	import { PUBLIC_CLUBIFY_API_BASE } from '$env/static/public';
 	import { goto } from '$app/navigation';
 	import ChatGPTPlusAd from '$lib/components/clubify/ChatGPTPlusAd.svelte';
 
@@ -75,7 +74,7 @@
 				}
 			});
 
-			const response = await fetch(`${PUBLIC_CLUBIFY_API_BASE}/post-to-uab`, {
+			const response = await fetch('/api/post-to-uab', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'

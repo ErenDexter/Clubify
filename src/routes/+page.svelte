@@ -6,7 +6,6 @@
 	import { getRandomClub, getRandomDesignation } from '$lib/data/clubify';
 	import ClubifyFooter from '$lib/components/clubify/ClubifyFooter.svelte';
 	import logo from '$lib/assets/logo.png';
-	import { PUBLIC_CLUBIFY_API_BASE } from '$env/static/public';
 
 	// Form state
 	let name = $state('');
@@ -40,12 +39,9 @@
 			formData.append('file', imageFile);
 			formData.append('name', name);
 
-			// Send to server
-			const response = await fetch(`${PUBLIC_CLUBIFY_API_BASE}/process-image/`, {
+			// Send to local SvelteKit API route
+			const response = await fetch('/api/process-image', {
 				method: 'POST',
-				headers: {
-					accept: 'image/webp'
-				},
 				body: formData
 			});
 
