@@ -1,97 +1,171 @@
 <script lang="ts">
-	// Always-visible, lighter themed advertisement component
-	let {
-		heading = 'অল্প খরচে চ্যাটজিপিটি প্লাস চান?',
-		subheading = 'Study • Research • Writing • Brainstorm',
-		href = 'https://bestpremiumsub.com/products/chatgpt-premium',
-		price = 'From 199 BDT',
-		highlight = 'Run by BUET Students'
-	} = $props();
 </script>
 
-<section
-	class="relative overflow-hidden rounded-2xl border border-indigo-100 bg-white p-5 font-bengali shadow-sm sm:p-7"
-	aria-labelledby="chatgpt-plus-ad-heading"
->
-	<div
-		class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,theme(colors.indigo.100),transparent_60%)]"
-	></div>
-	<div
-		class="pointer-events-none absolute inset-0 bg-[linear-gradient(115deg,theme(colors.indigo.50/.6),theme(colors.sky.50/.0),theme(colors.blue.50/.4))]"
-	></div>
-
-	<div class="relative grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
-		<div>
-			<div class="mb-3 flex flex-wrap items-center gap-2">
-				<span
-					class="inline-flex items-center gap-1 rounded-full bg-indigo-600 px-2.5 py-0.5 text-[11px] font-medium text-white"
-				>
-					<span class="h-1.5 w-1.5 animate-pulse rounded-full bg-white"></span>
-					{highlight}
-				</span>
-				<span
-					class="inline-flex items-center gap-1 rounded-full bg-indigo-50 px-2.5 py-0.5 text-[11px] font-medium text-indigo-600"
-				>
-					⚡ Instant
-				</span>
-				<span
-					class="inline-flex items-center gap-1 rounded-full bg-sky-50 px-2.5 py-0.5 text-[11px] font-medium text-sky-600"
-				>
-					🕐 24/7 Support
-				</span>
-			</div>
-			<h3
-				id="chatgpt-plus-ad-heading"
-				class="text-xl font-semibold tracking-tight text-indigo-900 sm:text-2xl"
-			>
-				{heading}
-			</h3>
-			<p class="mt-1 text-xs font-medium tracking-wider text-indigo-500/80 uppercase">
-				{subheading}
-			</p>
-			<p class="mt-3 max-w-prose text-sm leading-relaxed text-zinc-600">
-				পড়াশোনা, রিসার্চ, লেখালেখি ও প্রোডাক্টিভিটি বাড়াতে সল্প মূল্যে ChatGPT Plus. ডেডিকেটেড
-				অ্যাকাউন্ট, দ্রুত সাপোর্ট। আজই শুরু করুন।
-			</p>
-			<div class="mt-4 flex flex-wrap items-center gap-5">
-				<a
-					{href}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700 focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:outline-none"
-				>
-					🔥 Get Plus
-					<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M17 8l4 4m0 0-4 4m4-4H3"
-						/>
-					</svg>
-				</a>
-				<div class="flex items-baseline gap-2">
-					<span class="text-base font-bold text-emerald-600">{price}</span>
-					<span class="text-[10px] font-medium text-zinc-400 line-through">249 BDT</span>
-				</div>
-			</div>
-			<p class="mt-3 text-[12px] text-zinc-400">Secure • Refund within 24h • Student run</p>
-		</div>
-		<!-- <div class="relative order-first mx-auto w-36 shrink-0 md:order-last md:w-44">
-			<div class="relative aspect-square rounded-xl border border-indigo-100 bg-indigo-50/60 p-2">
-				<div class="flex h-full w-full items-center justify-center rounded md:p-2">
-					<div class="rounded-lg bg-white px-4 py-3 text-center shadow-sm ring-1 ring-indigo-100">
-						<p class="text-[10px] font-semibold tracking-wider text-indigo-600">GPT PLUS</p>
-						<p class="mt-1.5 text-[11px] leading-tight text-zinc-600">
-							Faster<br />Latest<br />Higher
-						</p>
-					</div>
-				</div>
-			</div>
-		</div> -->
-	</div>
+<section class="chatgpt-ad-container">
+	<h1 class="ad-title">Panir daame ChatGPT Plus lagbe???</h1>
+	<p class="ad-description text-pretty">
+		BUET student der dara porichalito, 100% trustworthy, Instant Delivery, 24/7 Support.
+	</p>
+	<p class="ad-price">MATRO 199 TAKA THEKE SHURU!!!</p>
+	<a target="_blank" href="https://bestpremiumsub.com/products/chatgpt-premium" class="ad-button"
+		>Click Here</a
+	>
 </section>
 
 <style>
-	/* Removed heavy animations for a calmer light theme */
+	.chatgpt-ad-container {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		border-radius: 20px;
+		padding: 2rem;
+		margin: 1.5rem 0;
+		box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+		border: 2px solid rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(10px);
+		position: relative;
+		overflow: hidden;
+		animation: glow 2s ease-in-out infinite alternate;
+	}
+
+	.chatgpt-ad-container::before {
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 200%;
+		height: 200%;
+		background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+		animation: shimmer 3s linear infinite;
+		pointer-events: none;
+	}
+
+	.ad-title {
+		font-size: 1.8rem;
+		font-weight: 900;
+		color: #ffffff;
+		text-align: center;
+		margin-bottom: 1rem;
+		text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+		animation: bounce 1s ease-in-out infinite alternate;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.ad-description {
+		font-size: 1.1rem;
+		color: rgba(255, 255, 255, 0.9);
+		text-align: center;
+		margin-bottom: 1rem;
+		line-height: 1.6;
+		font-weight: 500;
+	}
+
+	.ad-price {
+		font-size: 1.5rem;
+		font-weight: 800;
+		color: #ffeb3b;
+		text-align: center;
+		margin-bottom: 1.5rem;
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+		animation: pulse 1.5s ease-in-out infinite;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	.ad-button {
+		display: inline-block;
+		background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+		color: white;
+		padding: 1rem 2.5rem;
+		text-decoration: none;
+		border-radius: 50px;
+		font-weight: 700;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		transition: all 0.3s ease;
+		box-shadow: 0 10px 20px rgba(255, 107, 107, 0.4);
+		border: 2px solid rgba(255, 255, 255, 0.3);
+		position: relative;
+		overflow: hidden;
+		display: block;
+		text-align: center;
+		width: fit-content;
+		margin: 0 auto;
+	}
+
+	.ad-button:hover {
+		transform: translateY(-3px) scale(1.05);
+		box-shadow: 0 15px 30px rgba(255, 107, 107, 0.6);
+		background: linear-gradient(45deg, #ff5252, #f44336);
+	}
+
+	.ad-button:active {
+		transform: translateY(-1px) scale(1.02);
+	}
+
+	@keyframes glow {
+		0% {
+			box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+		}
+		100% {
+			box-shadow:
+				0 25px 50px rgba(102, 126, 234, 0.5),
+				0 0 30px rgba(102, 126, 234, 0.2);
+		}
+	}
+
+	@keyframes shimmer {
+		0% {
+			transform: translateX(-100%) translateY(-100%) rotate(45deg);
+		}
+		100% {
+			transform: translateX(100%) translateY(100%) rotate(45deg);
+		}
+	}
+
+	@keyframes bounce {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(-5px);
+		}
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.05);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	/* Responsive design */
+	@media (max-width: 768px) {
+		.chatgpt-ad-container {
+			padding: 1.5rem;
+			margin: 1rem 0;
+		}
+
+		.ad-title {
+			font-size: 1.5rem;
+		}
+
+		.ad-description {
+			font-size: 1rem;
+		}
+
+		.ad-price {
+			font-size: 1.3rem;
+		}
+
+		.ad-button {
+			padding: 0.8rem 2rem;
+			font-size: 1.1rem;
+		}
+	}
 </style>

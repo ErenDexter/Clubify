@@ -62,7 +62,7 @@
 							id="name"
 							type="text"
 							bind:value={name}
-							placeholder="e.g., Ricky Barua 😊"
+							placeholder="e.g., Sunaina Rahman Adisha"
 							class="w-full rounded-xl border border-zinc-200 bg-white py-3 pr-3.5 pl-11 text-base text-zinc-800 shadow-sm transition placeholder:text-zinc-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/50 focus:outline-none"
 							required
 						/>
@@ -82,7 +82,7 @@
 							id="institution"
 							type="text"
 							bind:value={institution}
-							placeholder="e.g., Chittagong University of Engineering & Technology 🎓"
+							placeholder="e.g., Bangladesh University of Engineering & Technology"
 							class="w-full rounded-xl border border-zinc-200 bg-white py-3 pr-3.5 pl-11 text-base text-zinc-800 shadow-sm transition placeholder:text-zinc-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/50 focus:outline-none"
 							required
 						/>
